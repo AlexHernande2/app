@@ -1,6 +1,7 @@
 <?php namespace conexionDb;
 
 use mysqli;
+
 class ConexionDbController
 {
     private $server_db='127.0.0.1';
@@ -21,8 +22,10 @@ class ConexionDbController
     function close(){
         $this->conex->close();
     }
+
     function validarConexion(){
         return $this->conex->connect_error;
     }
     
 }
+?>

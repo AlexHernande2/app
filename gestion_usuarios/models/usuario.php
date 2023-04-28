@@ -1,5 +1,7 @@
 <?php
 
+namespace usuario;
+
 class Usuario{
     private $id;
     private $username;
@@ -7,29 +9,29 @@ class Usuario{
     private $name;
 
     public function getId(){
-        return $this-> id;
+        return $this->id;
     }
     public function setId($value){
-        $this-> id= $value;
+        $this->id = $value;
     }
-
     public function getUsername(){
-        return $this-> username;
+        return $this->username;
     }
     public function setUsername($value){
-        $this->username=$value;
+        $this->username = $value;
     }
     public function getPassword(){
-        return $this-> password;
+        return $this->password;
     }
     public function setPassword($value){
-        $this->password=$value;
+        $this->password = $value;
     }
     public function getName(){
-        return $this-> name;
+        return $this->name;
     }
     public function setName($value){
-        $this->name=$value;
+        $this->name = $value;
     }
 }
+
 ?>

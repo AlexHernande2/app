@@ -19,6 +19,7 @@ class ConexionDb
     function close(){
         $this->conex->close();
     }
+
     function validarConexion(){
         return $this->conex->connect_error;
     }
